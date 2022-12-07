@@ -272,7 +272,7 @@ void play_song_numb (int song_numb, int btn_numb) {
     // Preved notu na cislo
     int note_number = noteToNumber(ovcaci[actual_note][0]);
     // Pokud je aktualni nota posledni
-    if (actual_note == ovcaci_notes_count) {
+    if (actual_note == ovcaci_notes_count-1) {
       play_note(ovcaci[actual_note][0],ovcaci[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -292,7 +292,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   // PISNICKA 2 HOLKA MODROKOKA
   if (song_numb == 2) {
     int note_number = noteToNumber(holka[actual_note][0]);
-    if (actual_note == holka_notes_count) {
+    if (actual_note == holka_notes_count-1) {
       play_note(holka[actual_note][0],holka[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -311,7 +311,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 3 SKAKAL PES
   if (song_numb == 3) {
     int note_number = noteToNumber(pes[actual_note][0]);
-    if (actual_note == pes_notes_count) {
+    if (actual_note == pes_notes_count-1) {
       play_note(pes[actual_note][0],pes[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -330,7 +330,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 4  TRAVICKA
   if (song_numb == 4) {
     int note_number = noteToNumber(travicka[actual_note][0]);
-    if (actual_note == travicka_notes_count) {
+    if (actual_note == travicka_notes_count-1) {
       play_note(travicka[actual_note][0],travicka[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -349,7 +349,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 5  LISKA
   if (song_numb == 5) {
     int note_number = noteToNumber(liska[actual_note][0]);
-    if (actual_note == liska_notes_count) {
+    if (actual_note == liska_notes_count-1) {
       play_note(liska[actual_note][0],liska[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -369,7 +369,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 6  PRSI
   if (song_numb == 6) {
     int note_number = noteToNumber(prsi[actual_note][0]);
-    if (actual_note == prsi_notes_count) {
+    if (actual_note == prsi_notes_count-1) {
       play_note(prsi[actual_note][0],prsi[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -389,7 +389,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 7 HALI
   if (song_numb == 7) {
     int note_number = noteToNumber(hali[actual_note][0]);
-    if (actual_note == hali_notes_count) {
+    if (actual_note == hali_notes_count-1) {
       play_note(hali[actual_note][0],hali[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
@@ -409,7 +409,7 @@ void play_song_numb (int song_numb, int btn_numb) {
   //PISNICKA 8  PEC
   if (song_numb == 8) {
     int note_number = noteToNumber(pec[actual_note][0]);
-    if (actual_note == pec_notes_count) {
+    if (actual_note == pec_notes_count-1) {
       play_note(pec[actual_note][0],pec[actual_note][1]);
 			leds(note_number, LOW);
 			restart = true;
